@@ -44,7 +44,7 @@ for c in c_list:
             iteration=0 # 计算给定点的迭代次数
             z=Complex(X_min+col*delta_X,Y_min+row*delta_Y)
             while iteration < max_interations and z.module()<max_module:
-                z=z*z+c # Mandelbrot 集合迭代
+                z=z*z+c # Julia 集合迭代
                 iteration+=1
             if iteration >= max_interations:
                 iteration=max_interations
